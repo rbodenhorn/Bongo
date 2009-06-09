@@ -15,7 +15,7 @@ Bongo.mainPage = SC.Page.design({
     
     labelView: SC.LabelView.design({
       layout: { centerX: 0, centerY: 0, width: 200, height: 18 },
-      tagName: "h1", value: "I love SproutCore"
+      tagName: "h1", value: "SproutCore for the challenged"
     })
   })
 
