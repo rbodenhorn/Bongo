@@ -4,6 +4,8 @@
 // ==========================================================================
 /*globals Bongo */
 
+sc_require('models/photo_group');
+
 /** @class
 
   (Document your Model here)
