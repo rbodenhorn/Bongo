@@ -8,7 +8,11 @@ sc_require('models/subscription');
 
 Bongo.Subscription.FIXTURES = [
 
-  // TODO: Add your data fixtures here.
+  { guid: 1,
+    name: "library",
+    photoGroup: 1,
+    subscribers: [1,2,3,4,5]}
+    
   // All fixture records must have a unique primary key (default 'guid').  See 
   // the example below.
 

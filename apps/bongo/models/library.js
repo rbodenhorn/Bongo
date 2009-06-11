@@ -16,6 +16,9 @@ sc_require('models/photo_group');
 Bongo.Library = Bongo.PhotoGroup.extend(
 /** @scope Bongo.Library.prototype */ {
 
-  name: SC.Record.attr(String)
+  name: SC.Record.attr(String),
+  
+  photoGroup: SC.Record.toOne('Bongo.PhotoGroup'),
+  folders: SC.Record.toMany('Bongo.Folder')
   
 }) ;

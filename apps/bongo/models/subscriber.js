@@ -5,15 +5,16 @@
 /*globals Bongo */
 
 /** @class
-
+  
   (Document your Model here)
-
+  
   @extends SC.Record
   @version 0.1
 */
 Bongo.Subscriber = SC.Record.extend(
 /** @scope Bongo.Subscriber.prototype */ {
-
-  name: SC.Record.attr(String)
-
+  
+  name: SC.Record.attr(String),
+  subscription: SC.Record.toOne('Bongo.Subscription')
+  
 }) ;

@@ -8,7 +8,10 @@ sc_require('models/photo_group');
 
 Bongo.PhotoGroup.FIXTURES = [
 
-  // TODO: Add your data fixtures here.
+  {guid: 1,
+    library: 1,
+    subscription: 1
+    }
   // All fixture records must have a unique primary key (default 'guid').  See 
   // the example below.
 

@@ -14,6 +14,8 @@
 Bongo.Folder = SC.Record.extend(
 /** @scope Bongo.Folder.prototype */ {
 
-  name: SC.Record.attr(String)
+  name: SC.Record.attr(String),
+  library: SC.Record.toOne('Bongo.Library')
+  
 
 }) ;

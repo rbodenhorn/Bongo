@@ -13,18 +13,23 @@ Bongo.Folder.FIXTURES = [
   // the example below.
 
   { guid: 1,
-    name: "Favorites"},
+    name: "Favorites",
+    library: 1},
   
   { guid: 2,
-    name: "France"},
+    name: "France",
+    library: 1},
   
   { guid: 3,
-    name: "England"},
+    name: "England",
+    library: 1},
   
   { guid: 4,
-    name: "Mt Rainier"},
+    name: "Mt Rainier",
+    library: 1},
   
   { guid: 5,
-    name: "Yellowstone"}
+    name: "Yellowstone",
+    library: 1}
 
 ];
