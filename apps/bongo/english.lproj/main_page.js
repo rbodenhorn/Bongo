@@ -52,39 +52,52 @@ Bongo.mainPage = SC.Page.design({
 
     bottomBar: SC.View.design({
       layout: { left: 0, height: 40, right: 0, bottom: 0 },
+      classNames: 'bottom-bar',
       childViews: 'plusButton minusButton editButton sizeSlider minsizeLabel maxsizeLabel countLabel'.w(),
 
       plusButton: SC.ButtonView.design({
-        layout: { left: 10, top: 10, height: 10, lenght: 20 },
+        layout: { left: 10, top: 8, height: 21, width: 80 },
+        title: "+",
+        target: Bongo,
+        action: 'addFolder'
       }),
       
       minusButton: SC.ButtonView.design({
-        layout: { left: 100, top: 10, height: 10, lenght: 20 },
+        layout: { left: 120, top: 8, height: 21, width: 80 },
+        title: "-",
+        target: Bongo,
+        action: 'removeFolder'
       }),
     
       editButton: SC.ButtonView.design({
-        layout: { left: 400, top: 10, height: 10, lenght: 20 },
-      }),
+        layout: { left: 600, top: 8, height: 21, width: 80 },
+        title: "Edit",
+        classNames: 'edit-button',
+     }),
   
       sizeSlider: SC.SliderView.design({
-        layout: { left: 800, top: 10, height: 10, lenght: 20 },
+        layout: { left: 750, top: 10, height: 15, width: 200 },
         value: 100, minimum: 50, maximum: 320
       }),
     
       minsizeLabel: SC.LabelView.design({
+        layout: { left: 720, top: 8, height: 21, width: 30 },
         escapeHTML: NO,
         classNames: 'minsize',
         value: "50"
       }),
     
       maxsizeLabel: SC.LabelView.design({
+        layout: { left: 970, top: 8, height: 21, width: 30 },
         escapeHTML: NO,
         classNames: 'maxsize',
         value: "320"
       }),
     
       countLabel: SC.LabelView.design({
-        layout: { left: 500, top: 10, height: 10, lenght: 40 }
+        layout: { left: 350, top: 10, height: 25, width: 200 },
+        classNames: 'count-label',
+        value: "photo count" + "  items"
       })
     })    
   })
