@@ -15,6 +15,14 @@ sc_require('models/photo_group');
 */
 Bongo.Library = Bongo.PhotoGroup.extend(
 /** @scope Bongo.Library.prototype */ {
+  
+  count: function() {
+    this.getPath('folders.length') ;
+  }.property('*folders.length').cacheable(),
+  
+  treeItemChildren: function() {
+    return this.get('folders') ;
+  }.property('folders').cacheable(),
 
   name: SC.Record.attr(String),
   

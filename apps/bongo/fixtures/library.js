@@ -9,7 +9,7 @@ sc_require('models/library');
 Bongo.Library.FIXTURES = [
 
   { guid: 1,
-    name: "library",
+    name: "Library",
     photoGroup: 1,
     folders: [1,2,3,4,5]}
   // All fixture records must have a unique primary key (default 'guid').  See 

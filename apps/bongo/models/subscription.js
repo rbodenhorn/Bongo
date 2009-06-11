@@ -15,7 +15,15 @@ sc_require('models/photo_group');
 */
 Bongo.Subscription = Bongo.PhotoGroup.extend(
 /** @scope Bongo.Subscription.prototype */ {
-
+  
+  count: function() {
+    this.getPath('subscribers.length') ;
+  }.property('*subscribers.length').cacheable(),
+  
+  treeItemChildren: function() {
+    return this.get('subscribers') ;
+  }.property('subscribers').cacheable(),
+  
   name: SC.Record.attr(String),
   
   photoGroup: SC.Record.toOne('Bongo.PhotoGroup'),

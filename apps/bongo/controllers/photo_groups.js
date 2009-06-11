@@ -13,6 +13,6 @@
 Bongo.photoGroupsController = SC.TreeController.create(
 /** @scope Bongo.photoGroupsController.prototype */ {
 
-  // TODO: Add your own code here.
+  treeItemIsGrouped: YES
 
 }) ;

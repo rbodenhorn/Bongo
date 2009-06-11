@@ -18,13 +18,12 @@ Bongo.main = function main() {
   // on screen.  If you app gets any level of complexity, you will probably 
   // create multiple pages and panes.  
   Bongo.mainPage.get('mainPane').append() ;
-
+  
   // Step 2. Set the content property on your primary controller.
   // This will make your app come alive!
-
-  // TODO: Set the content property on your primary controller
-  // ex: .contactsController.set('content',.contacts);
-
+  var content = Bongo.store.find(Bongo.PhotoGroup,1);
+  Bongo.photoGroupsController.set('content', content);  
+  
 } ;
 
 function main() { Bongo.main(); }

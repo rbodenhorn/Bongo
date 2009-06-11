@@ -21,12 +21,12 @@ Bongo.mainPage = SC.Page.design({
       topLeftView: SC.ScrollView.design({
         layout: { top: 0, left: 0, right: 0, bottom: 0 },
         hasHorizontalScroller: NO,
-        contentView: SC.ListView.design({
-          // contentValueKey: 'title',
+        contentView: SC.SourceListView.design({
+          contentValueKey: 'name',
           // contentIconKey:  'icon',
           // contentUnreadCountKey: 'unread',
           // hasContentIcon: YES,
-          // contentBinding: 'SampleControls.filesController'//,
+          contentBinding: 'Bongo.photoGroupsController.arrangedObjects'
           //selectionBinding: 'SampleControls.filesController.selection'
           // selectOnMouseDown: YES,
           // canReorderContent: YES

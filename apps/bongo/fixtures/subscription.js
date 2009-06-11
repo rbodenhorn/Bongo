@@ -9,7 +9,7 @@ sc_require('models/subscription');
 Bongo.Subscription.FIXTURES = [
 
   { guid: 1,
-    name: "library",
+    name: "Subscriptions",
     photoGroup: 1,
     subscribers: [1,2,3,4,5]}
     
