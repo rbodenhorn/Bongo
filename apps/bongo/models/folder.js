@@ -14,6 +14,6 @@
 Bongo.Folder = SC.Record.extend(
 /** @scope Bongo.Folder.prototype */ {
 
-  // TODO: Add your own code here.
+  name: SC.Record.attr(String)
 
 }) ;

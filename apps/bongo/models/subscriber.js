@@ -1,5 +1,5 @@
 // ==========================================================================
-// Project:   Bongo.Subscribers
+// Project:   Bongo.Subscriber
 // Copyright: ©2009 My Company, Inc.
 // ==========================================================================
 /*globals Bongo */
@@ -11,9 +11,9 @@
   @extends SC.Record
   @version 0.1
 */
-Bongo.Subscribers = SC.Record.extend(
-/** @scope Bongo.Subscribers.prototype */ {
+Bongo.Subscriber = SC.Record.extend(
+/** @scope Bongo.Subscriber.prototype */ {
 
-  // TODO: Add your own code here.
+  name: SC.Record.attr(String)
 
 }) ;

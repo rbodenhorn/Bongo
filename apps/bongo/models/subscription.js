@@ -16,6 +16,6 @@ sc_require('models/photo_group');
 Bongo.Subscription = Bongo.PhotoGroup.extend(
 /** @scope Bongo.Subscription.prototype */ {
 
-  // TODO: Add your own code here.
+  name: SC.Record.attr(String)
 
 }) ;
