@@ -12,7 +12,7 @@
 */
 Bongo.photosController = SC.ArrayController.create(
 /** @scope Bongo.photosController.prototype */ {
-
-  // TODO: Add your own code here.
-
+  
+  contentBinding: 'Bongo.photoGroupController.photos'
+  
 }) ;

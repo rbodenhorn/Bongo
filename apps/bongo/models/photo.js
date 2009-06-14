@@ -1,5 +1,5 @@
 // ==========================================================================
-// Project:   Bongo.Folder
+// Project:   Bongo.Photo
 // Copyright: ©2009 My Company, Inc.
 // ==========================================================================
 /*globals Bongo */
@@ -11,11 +11,10 @@
   @extends SC.Record
   @version 0.1
 */
-Bongo.Folder = SC.Record.extend(
-/** @scope Bongo.Folder.prototype */ {
+Bongo.Photo = SC.Record.extend(
+/** @scope Bongo.Photo.prototype */ {
   
-  name: SC.Record.attr(String),
-  library: SC.Record.toOne('Bongo.Library'),
-  photos: SC.Record.toMany('Bongo.Photo')
+  url: SC.Record.attr(String),
+  folder: SC.Record.toOne('Bongo.Folder')
   
 });

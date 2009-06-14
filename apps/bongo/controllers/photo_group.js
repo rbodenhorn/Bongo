@@ -12,7 +12,7 @@
 */
 Bongo.photoGroupController = SC.ObjectController.create(
 /** @scope Bongo.photoGroupController.prototype */ {
-
-  // TODO: Add your own code here.
-
+  
+  contentBinding: SC.Binding.single('Bongo.photoGroupController.selection')
+  
 }) ;

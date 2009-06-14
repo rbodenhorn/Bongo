@@ -14,7 +14,9 @@ Bongo.Folder.FIXTURES = [
 
   { guid: 1,
     name: "Favorites",
-    library: 1},
+    library: 1,
+    photos: [1]
+  },
   
   { guid: 2,
     name: "France",
