@@ -15,6 +15,7 @@ Bongo.Subscriber = SC.Record.extend(
 /** @scope Bongo.Subscriber.prototype */ {
   
   name: SC.Record.attr(String),
-  subscription: SC.Record.toOne('Bongo.Subscription')
+  subscription: SC.Record.toOne('Bongo.Subscription'),
+  photos: SC.Record.toMany('Bongo.Photo')
   
 }) ;

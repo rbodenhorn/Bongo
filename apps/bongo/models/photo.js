@@ -15,6 +15,8 @@ Bongo.Photo = SC.Record.extend(
 /** @scope Bongo.Photo.prototype */ {
   
   url: SC.Record.attr(String),
-  folder: SC.Record.toOne('Bongo.Folder')
+  folder: SC.Record.toOne('Bongo.Folder'),
+  subscriberer: SC.Record.toOne('Bongo.Subscriber')
+  
   
 });

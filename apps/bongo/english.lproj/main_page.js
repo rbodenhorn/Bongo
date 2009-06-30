@@ -79,7 +79,7 @@ Bongo.mainPage = SC.Page.design({
      }),
   
       sizeSlider: SC.SliderView.design({
-        layout: { left: 750, top: 10, height: 15, width: 200 },
+        layout: { left: 750, top: 10, height: 25, width: 200 },
         value: 100, minimum: 50, maximum: 320
       }),
     
