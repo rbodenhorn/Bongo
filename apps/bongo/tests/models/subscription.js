@@ -7,9 +7,12 @@
 module("Bongo.Subscription");
 
 // TODO: Replace with real unit test for Subscription
-test("test description", function() {
-  var expected = "test";
-  var result   = "test";
-  equals(result, expected, "test should equal test");
+test("Should have fixtures", function() {
+  var expected = 1;
+  var result   = Bongo.store.findAll(Bongo.Subscription).get('length');
+  equals(result, expected, "should have %@ subscriptions fixtures".fmt(expected));
 });
 
+// type in command line http://localhost:4020/bongo/en/current/tests/models/photo_group.html
+
+// to test all type http://localhost:4020/bongo/en/current/tests.html

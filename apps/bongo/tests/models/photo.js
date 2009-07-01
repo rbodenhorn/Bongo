@@ -7,9 +7,11 @@
 module("Bongo.Photo");
 
 // TODO: Replace with real unit test for Photo
-test("test description", function() {
-  var expected = "test";
-  var result   = "test";
-  equals(result, expected, "test should equal test");
+test("Should have fixtures", function() {
+  var expected = 30;
+  var result   = Bongo.store.findAll(Bongo.Photo).get('length');
+  equals(result, expected, "should have %@ photos fixtures".fmt(expected));
 });
 
+// ToRun go to Firefox and type in the http://localhost:4020/bongo/en/current/tests/models/photo.html 
+// to test all type http://localhost:4020/bongo/en/current/tests.html

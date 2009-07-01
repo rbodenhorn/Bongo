@@ -7,9 +7,12 @@
 module("Bongo.Folder");
 
 // TODO: Replace with real unit test for Folder
-test("test description", function() {
-  var expected = "test";
-  var result   = "test";
-  equals(result, expected, "test should equal test");
+test("Should have fixtures", function() {
+  var expected = 5;
+  var result   = Bongo.store.findAll(Bongo.Folder).get('length');
+  equals(result, expected, "should have folders fixtues");
 });
 
+// type in command line http://localhost:4020/bongo/en/current/tests/models/photo_group.html
+
+// to test all type http://localhost:4020/bongo/en/current/tests.html

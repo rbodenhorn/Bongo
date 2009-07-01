@@ -7,9 +7,11 @@
 module("Bongo.PhotoGroup");
 
 // TODO: Replace with real unit test for PhotoGroup
-test("test description", function() {
-  var expected = "test";
-  var result   = "test";
-  equals(result, expected, "test should equal test");
+test("Should have fixtures", function() {
+  var expected = 1;
+  var result   = Bongo.store.findAll(Bongo.PhotoGroup).get('length');
+  equals(result, expected, "should have %@ photogroup fixtures".fmt(expected));
 });
 
+// ToRun go to Firefox and type in the http://localhost:4020/bongo/en/current/tests/models/photo_group.html 
+// to test all type http://localhost:4020/bongo/en/current/tests.html
