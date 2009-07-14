@@ -1,6 +1,5 @@
 // ==========================================================================
 // Project:   Bongo - mainPage
-// Copyright: ©2009 My Company, Inc.
 // ==========================================================================
 /*globals Bongo */
 
@@ -24,9 +23,9 @@ Bongo.mainPage = SC.Page.design({
         contentView: SC.SourceListView.design({
           contentValueKey: 'name',
           contentIconKey:  'icon',
-          // contentUnreadCountKey: 'unread',
           hasContentIcon: YES,
           contentBinding: 'Bongo.photoGroupsController.arrangedObjects'
+          // contentUnreadCountKey: 'unread',
           //selectionBinding: 'SampleControls.filesController.selection'
           // selectOnMouseDown: YES,
           // canReorderContent: YES
