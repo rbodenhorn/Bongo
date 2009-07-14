@@ -23,9 +23,9 @@ Bongo.mainPage = SC.Page.design({
         hasHorizontalScroller: NO,
         contentView: SC.SourceListView.design({
           contentValueKey: 'name',
-          // contentIconKey:  'icon',
+          contentIconKey:  'icon',
           // contentUnreadCountKey: 'unread',
-          // hasContentIcon: YES,
+          hasContentIcon: YES,
           contentBinding: 'Bongo.photoGroupsController.arrangedObjects'
           //selectionBinding: 'SampleControls.filesController.selection'
           // selectOnMouseDown: YES,
