@@ -14,6 +14,8 @@
 Bongo.Folder = SC.Record.extend(
 /** @scope Bongo.Folder.prototype */ {
   
+  icon: 'sc-icon-folder-16',
+  
   name: SC.Record.attr(String),
   library: SC.Record.toOne('Bongo.Library'),
   photos: SC.Record.toMany('Bongo.Photo')

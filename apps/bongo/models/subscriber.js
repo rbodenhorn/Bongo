@@ -14,6 +14,8 @@
 Bongo.Subscriber = SC.Record.extend(
 /** @scope Bongo.Subscriber.prototype */ {
   
+  icon: 'sc-icon-group-16',
+  
   name: SC.Record.attr(String),
   subscription: SC.Record.toOne('Bongo.Subscription'),
   photos: SC.Record.toMany('Bongo.Photo')
