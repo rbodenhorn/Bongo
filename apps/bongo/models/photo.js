@@ -16,7 +16,7 @@ Bongo.Photo = SC.Record.extend(
   
   url: SC.Record.attr(String),
   folder: SC.Record.toOne('Bongo.Folder'),
-  subscriberer: SC.Record.toOne('Bongo.Subscriber')
+  subscriber: SC.Record.toOne('Bongo.Subscriber')
   
   
 });

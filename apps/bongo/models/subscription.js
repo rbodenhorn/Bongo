@@ -29,5 +29,4 @@ Bongo.Subscription = Bongo.PhotoGroup.extend(
   photoGroup: SC.Record.toOne('Bongo.PhotoGroup'),
   subscribers: SC.Record.toMany('Bongo.Subscriber')
   
-
 }) ;

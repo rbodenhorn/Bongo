@@ -24,9 +24,9 @@ Bongo.mainPage = SC.Page.design({
           contentValueKey: 'name',
           contentIconKey:  'icon',
           hasContentIcon: YES,
-          contentBinding: 'Bongo.photoGroupsController.arrangedObjects'
-          // contentUnreadCountKey: 'unread',
-          //selectionBinding: 'SampleControls.filesController.selection'
+          contentBinding: 'Bongo.photoGroupsController.arrangedObjects',
+          contentUnreadCountKey: 'unread',
+          selectionBinding: 'Bongo.photoGroupsController.selection'
           // selectOnMouseDown: YES,
           // canReorderContent: YES
         })
