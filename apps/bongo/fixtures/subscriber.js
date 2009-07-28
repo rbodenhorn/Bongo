@@ -15,23 +15,27 @@ Bongo.Subscriber.FIXTURES = [
   { guid: 1,
     name: "Bob's Photos",
     subscription: 1,
-    photos: [1]},
+  },
   
   { guid: 2,
     name: "Dave's Photos",
-    subscription: 1},
+    subscription: 1,
+  },
   
   { guid: 3,
     name: "Ken's Photos",
     subscription: 1,
-    photos: [3]},
+    subscription: 1,
+  },
   
   { guid: 4,
     name: "Sue's Photos",
-    subscription: 1},
+    subscription: 1,
+  },
   
   { guid: 5,
     name: "Linda's Photos",
-    subscription: 1}
+    subscription: 1,
+  }
 
 ];

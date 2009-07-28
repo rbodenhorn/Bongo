@@ -146,7 +146,7 @@ Bongo.Photo.FIXTURES = [
   
   { guid: 27,
     url: "http://www.mtrainierphoto.com/The_Institute_files/Rainier-Photo-Workshops.jpg",
-    subscriber:4
+    subscriber:5
    },
    
   { guid: 28,

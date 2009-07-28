@@ -5,7 +5,9 @@
 
 // This page describes the main user interface for your application.  
 Bongo.mainPage = SC.Page.design({
-
+  
+  gridSize: 100,
+  
   // The main pane is made visible on screen as soon as your app is loaded.
   // Add childViews to this pane for views to display immediately on page 
   // load.
@@ -40,9 +42,12 @@ Bongo.mainPage = SC.Page.design({
           // contentIconKey:  'icon',
           // contentUnreadCountKey: 'unread',
           // hasContentIcon: YES,
+          rowHeightBinding: 'Bongo.mainPage.gridSize',
+          columnWidthBinding: 'Bongo.mainPage.gridSize',
           contentBinding: 'Bongo.photosController.arrangedObjects',
           exampleView: SC.ImageView.design({
-            contentValueKey: 'url'
+            contentValueKey: 'url',
+            useImageCache: NO
           })
           //selectionBinding: 'SampleControls.filesController.selection'
           // selectOnMouseDown: YES,
@@ -79,7 +84,8 @@ Bongo.mainPage = SC.Page.design({
   
       sizeSlider: SC.SliderView.design({
         layout: { left: 750, top: 10, height: 25, width: 200 },
-        value: 100, minimum: 50, maximum: 320
+        minimum: 50, maximum: 320,
+        valueBinding: 'Bongo.mainPage.gridSize'
       }),
     
       minsizeLabel: SC.LabelView.design({
@@ -99,9 +105,11 @@ Bongo.mainPage = SC.Page.design({
       countLabel: SC.LabelView.design({
         layout: { left: 350, top: 10, height: 25, width: 200 },
         classNames: 'count-label',
-        value: "photo count" + "  items"
+        valueBinding: SC.Binding.single('Bongo.photosController.length').transform(function(len) {
+          return "Photo Count: %@ Item%@".fmt(len, len > 1 ? 's' : '');
+        })
       })
-    })    
+    })
   })
   
-}); 
+});
