@@ -25,7 +25,6 @@ Bongo.Subscriber.FIXTURES = [
   { guid: 3,
     name: "Ken's Photos",
     subscription: 1,
-    subscription: 1,
   },
   
   { guid: 4,

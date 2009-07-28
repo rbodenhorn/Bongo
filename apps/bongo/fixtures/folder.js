@@ -24,17 +24,17 @@ Bongo.Folder.FIXTURES = [
   
   { guid: 3,
     name: "England",
-    library: 1,
+    library: 1
   },
   
   { guid: 4,
     name: "Mt Rainier",
-    library: 1,
+    library: 1
   },
   
   { guid: 5,
     name: "Yellowstone",
-    library: 1,
+    library: 1
   }
 
 ];

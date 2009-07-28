@@ -8,9 +8,9 @@ sc_require('models/photo');
 
 Bongo.Photo.FIXTURES = [
 
-  // TODO: Add your data fixtures here.
-  // All fixture records must have a unique primary key (default 'guid').  See 
-  // the example below.
+  // All fixture records must have a unique primary key (default 'guid').
+  // Adding photos for subscriber
+  
 
   { guid: 1,
     url: "http://www.freefoto.com/images/12/13/12_13_4---Flowers-in-a-Garden-Border_web.jpg",
@@ -107,7 +107,7 @@ Bongo.Photo.FIXTURES = [
   { guid: 19,
     url: "http://www.freefoto.com/images/1351/04/1351_04_59---Eiffel-Tower--Paris--France_web.jpg?&k=Eiffel+Tower%2C+Paris%2C+France",
     subscriber:2
-    },
+   },
   
   { guid: 20,
     url: "http://www.freefoto.com/images/1351/13/1351_13_4---The-Louvre--Paris--France_web.jpg?&k=The+Louvre%2C+Paris%2C+France",
@@ -117,7 +117,7 @@ Bongo.Photo.FIXTURES = [
   { guid: 21,
     url: "http://www.freefoto.com/images/1351/07/1351_07_53---Notre-Dame-Cathedral--Paris--France_web.jpg?&k=Notre+Dame+Cathedral%2C+Paris%2C+France",
     subscriber:2
-    },
+   },
    
   { guid: 22,
     url: "http://www.freefoto.com/images/34/10/34_10_62---Hereford_web.jpg?&k=Hereford",
@@ -146,23 +146,23 @@ Bongo.Photo.FIXTURES = [
   
   { guid: 27,
     url: "http://www.mtrainierphoto.com/The_Institute_files/Rainier-Photo-Workshops.jpg",
-    subscriber:5
+    subscriber:4
    },
    
   { guid: 28,
     url: "http://www.freefoto.com/images/1222/02/1222_02_97---Great-Fountain-Geyser--Yellowstone-National-Park--USA_web.jpg?&k=Great+Fountain+Geyser%2C+Yellowstone+National+Park%2C+USA",
     subscriber:5
-    },
+   },
   
   { guid: 29,
     url: "http://www.freefoto.com/images/1222/02/1222_02_17---Great-Fountain-Geyser--Yellowstone-National-Park--USA_web.jpg?&k=Great+Fountain+Geyser%2C+Yellowstone+National+Park%2C+USA",
     subscriber:5
-    },
+   },
   
   { guid: 30,
     url: "http://www.freefoto.com/images/1222/02/1222_02_45---Great-Fountain-Geyser--Yellowstone-National-Park--USA_web.jpg?&k=Great+Fountain+Geyser%2C+Yellowstone+National+Park%2C+USA",
     subscriber:5
-    }
+   }
   
 
 ];
